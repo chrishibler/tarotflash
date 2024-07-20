@@ -5,16 +5,21 @@ import 'package:tarotflash/ui/dark_cat_theme.dart';
 
 class FrontCard extends StatelessWidget {
   final TarotModel card;
+  final double height;
 
-  const FrontCard({super.key, required this.card});
+  const FrontCard({super.key, required this.card, required this.height});
 
   @override
   Widget build(BuildContext context) {
-    return SvgPicture.asset(
-      card.imageName,
-      colorFilter: const ColorFilter.mode(
-        DarkCatTheme.sapphire,
-        BlendMode.srcIn,
+    return SizedBox(
+      height: height,
+      child: SvgPicture.asset(
+        fit: BoxFit.contain,
+        card.imageName,
+        colorFilter: const ColorFilter.mode(
+          DarkCatTheme.green,
+          BlendMode.srcIn,
+        ),
       ),
     );
   }

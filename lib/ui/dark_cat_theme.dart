@@ -42,7 +42,6 @@ class DarkCatTheme {
   );
 
   static final ThemeData darkData = ThemeData(
-    //colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
     brightness: Brightness.dark,
     useMaterial3: true,
     scaffoldBackgroundColor: DarkCatTheme.base,

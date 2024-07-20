@@ -305,7 +305,7 @@ class TarotModel {
     ),
     TarotModel(
       key: "two_of_cups",
-      name: "two of Cups",
+      name: "Two of Cups",
       meaning: "Partnership, unity, love",
       reversedMeaning: "Breakup, imbalance, lack of harmony",
       imageName: "tarot_images/52_two_of_cups.svg",
