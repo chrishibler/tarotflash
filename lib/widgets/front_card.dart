@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:tarotflash/models/tarot_model.dart';
@@ -16,7 +15,7 @@ class FrontCard extends StatelessWidget {
       height: height,
       child: SvgPicture.asset(
         fit: BoxFit.contain,
-        kIsWeb ? card.imageName : 'assets/${card.imageName}',
+        card.imageName,
         colorFilter: const ColorFilter.mode(
           DarkCatTheme.green,
           BlendMode.srcIn,

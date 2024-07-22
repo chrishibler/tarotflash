@@ -14,7 +14,7 @@ class TarotModel {
       name: "The Fool",
       meaning: "New beginnings, innocence, spontaneity, adventure",
       reversedMeaning: "Recklessness, foolishness, lack of direction",
-      imageName: "tarot_images/1_the_fool.svg",
+      imageName: "assets/tarot_images/1_the_fool.svg",
       group: "Major Arcana",
     ),
     TarotModel(
@@ -22,7 +22,7 @@ class TarotModel {
       name: "The Magician",
       meaning: "Manifestation, resourcefulness, power",
       reversedMeaning: "Manipulation, poor planning, untapped talents",
-      imageName: "tarot_images/2_the_magician.svg",
+      imageName: "assets/tarot_images/2_the_magician.svg",
       group: "Major Arcana",
     ),
     TarotModel(
@@ -30,7 +30,7 @@ class TarotModel {
       name: "The High Priestess",
       meaning: "Intuition, mystery, subconscious mind",
       reversedMeaning: "Secrets, disconnected from intuition, withdrawal",
-      imageName: "tarot_images/3_the_high_priestess.svg",
+      imageName: "assets/tarot_images/3_the_high_priestess.svg",
       group: "Major Arcana",
     ),
     TarotModel(
@@ -38,7 +38,7 @@ class TarotModel {
       name: "The Empress",
       meaning: "Fertility, abundance, nurturing",
       reversedMeaning: "Dependence, smothering, creative block",
-      imageName: "tarot_images/4_the_empress.svg",
+      imageName: "assets/tarot_images/4_the_empress.svg",
       group: "Major Arcana",
     ),
     TarotModel(
@@ -46,7 +46,7 @@ class TarotModel {
       name: "The Emperor",
       meaning: "Authority, structure, control",
       reversedMeaning: "Domination, rigidity, inflexibility",
-      imageName: "tarot_images/5_the_emperor.svg",
+      imageName: "assets/tarot_images/5_the_emperor.svg",
       group: "Major Arcana",
     ),
     TarotModel(
@@ -54,7 +54,7 @@ class TarotModel {
       name: "The Hierophant",
       meaning: "Tradition, conformity, spiritual guidance",
       reversedMeaning: "Rebellion, subversiveness, new approaches",
-      imageName: "tarot_images/6_the_high_priestess.svg",
+      imageName: "assets/tarot_images/6_the_high_priestess.svg",
       group: "Major Arcana",
     ),
     TarotModel(
@@ -62,7 +62,7 @@ class TarotModel {
       name: "The Lovers",
       meaning: "Love, relationships, choices",
       reversedMeaning: "Disharmony, imbalance, misalignment of values",
-      imageName: "tarot_images/7_the_lovers.svg",
+      imageName: "assets/tarot_images/7_the_lovers.svg",
       group: "Major Arcana",
     ),
     TarotModel(
@@ -70,7 +70,7 @@ class TarotModel {
       name: "The Chariot",
       meaning: "Determination, control, victory",
       reversedMeaning: "Lack of control, aggression, obstacles",
-      imageName: "tarot_images/8_the_chariot.svg",
+      imageName: "assets/tarot_images/8_the_chariot.svg",
       group: "Major Arcana",
     ),
     TarotModel(
@@ -78,7 +78,7 @@ class TarotModel {
       name: "Strength",
       meaning: "Courage, compassion, inner strength",
       reversedMeaning: "Self-doubt, weakness, insecurity",
-      imageName: "tarot_images/9_strength.svg",
+      imageName: "assets/tarot_images/9_strength.svg",
       group: "Major Arcana",
     ),
     TarotModel(
@@ -86,7 +86,7 @@ class TarotModel {
       name: "The Hermit",
       meaning: "Introspection, solitude, guidance",
       reversedMeaning: "Isolation, loneliness, withdrawal",
-      imageName: "tarot_images/10_the_hermit.svg",
+      imageName: "assets/tarot_images/10_the_hermit.svg",
       group: "Major Arcana",
     ),
     TarotModel(
@@ -94,7 +94,7 @@ class TarotModel {
       name: "Wheel of Fortune",
       meaning: "Change, cycles, fate",
       reversedMeaning: "Bad luck, resistance to change, breaking cycles",
-      imageName: "tarot_images/11_wheel_of_fortune.svg",
+      imageName: "assets/tarot_images/11_wheel_of_fortune.svg",
       group: "Major Arcana",
     ),
     TarotModel(
@@ -102,7 +102,7 @@ class TarotModel {
       name: "Justice",
       meaning: "Fairness, truth, law",
       reversedMeaning: "Dishonesty, lack of accountability, unfairness",
-      imageName: "tarot_images/12_justice.svg",
+      imageName: "assets/tarot_images/12_justice.svg",
       group: "Major Arcana",
     ),
     TarotModel(
@@ -110,7 +110,7 @@ class TarotModel {
       name: "The Hanged Man",
       meaning: "Surrender, new perspective, suspension",
       reversedMeaning: "Delays, resistance, stalling",
-      imageName: "tarot_images/13_the_hanged_man.svg",
+      imageName: "assets/tarot_images/13_the_hanged_man.svg",
       group: "Major Arcana",
     ),
     TarotModel(
@@ -118,7 +118,7 @@ class TarotModel {
       name: "Death",
       meaning: "Transformation, endings, change",
       reversedMeaning: "Resistance to change, personal transformation, inner purging",
-      imageName: "tarot_images/14_death.svg",
+      imageName: "assets/tarot_images/14_death.svg",
       group: "Major Arcana",
     ),
     TarotModel(
@@ -126,7 +126,7 @@ class TarotModel {
       name: "Temperance",
       meaning: "Balance, moderation, patience",
       reversedMeaning: "Imbalance, excess, lack of long-term vision",
-      imageName: "tarot_images/15_temperance.svg",
+      imageName: "assets/tarot_images/15_temperance.svg",
       group: "Major Arcana",
     ),
     TarotModel(
@@ -134,7 +134,7 @@ class TarotModel {
       name: "The Devil",
       meaning: "Bondage, addiction, materialism",
       reversedMeaning: "Detachment, freedom, release",
-      imageName: "tarot_images/16_the_devil.svg",
+      imageName: "assets/tarot_images/16_the_devil.svg",
       group: "Major Arcana",
     ),
     TarotModel(
@@ -142,7 +142,7 @@ class TarotModel {
       name: "The Tower",
       meaning: "Sudden upheaval, disaster, revelation",
       reversedMeaning: "Avoidance of disaster, fear of change, resistance",
-      imageName: "tarot_images/17_the_tower.svg",
+      imageName: "assets/tarot_images/17_the_tower.svg",
       group: "Major Arcana",
     ),
     TarotModel(
@@ -150,7 +150,7 @@ class TarotModel {
       name: "The Star",
       meaning: "Hope, faith, rejuvenation",
       reversedMeaning: "Lack of faith, despair, discouragement",
-      imageName: "tarot_images/18_the_star.svg",
+      imageName: "assets/tarot_images/18_the_star.svg",
       group: "Major Arcana",
     ),
     TarotModel(
@@ -158,7 +158,7 @@ class TarotModel {
       name: "The Moon",
       meaning: "Illusion, fear, anxiety",
       reversedMeaning: "Clarity, truth, overcoming fear",
-      imageName: "tarot_images/19_the_moon.svg",
+      imageName: "assets/tarot_images/19_the_moon.svg",
       group: "Major Arcana",
     ),
     TarotModel(
@@ -166,7 +166,7 @@ class TarotModel {
       name: "The Sun",
       meaning: "Joy, success, positivity",
       reversedMeaning: "Temporary depression, lack of success, pessimism",
-      imageName: "tarot_images/20_the_sun.svg",
+      imageName: "assets/tarot_images/20_the_sun.svg",
       group: "Major Arcana",
     ),
     TarotModel(
@@ -174,7 +174,7 @@ class TarotModel {
       name: "Judgement",
       meaning: "Rebirth, inner calling, absolution",
       reversedMeaning: "Self-doubt, refusal of self-examination, stagnation",
-      imageName: "tarot_images/21_judgement.svg",
+      imageName: "assets/tarot_images/21_judgement.svg",
       group: "Major Arcana",
     ),
     TarotModel(
@@ -182,7 +182,7 @@ class TarotModel {
       name: "The World",
       meaning: "Completion, accomplishment, travel",
       reversedMeaning: "Lack of closure, incompletion, shortcuts",
-      imageName: "tarot_images/22_the_world.svg",
+      imageName: "assets/tarot_images/22_the_world.svg",
       group: "Major Arcana",
     ),
     TarotModel(
@@ -190,7 +190,7 @@ class TarotModel {
       name: "Ace of Wands",
       meaning: "Inspiration, new opportunities, growth",
       reversedMeaning: "Delays, lack of motivation, missed opportunities",
-      imageName: "tarot_images/37_ace_of_wands.svg",
+      imageName: "assets/tarot_images/37_ace_of_wands.svg",
       group: "Wands",
     ),
     TarotModel(
@@ -198,7 +198,7 @@ class TarotModel {
       name: "Two of Wands",
       meaning: "Planning, decisions, discovery",
       reversedMeaning: "Fear of change, indecisiveness, lack of planning",
-      imageName: "tarot_images/38_two_of_wands.svg",
+      imageName: "assets/tarot_images/38_two_of_wands.svg",
       group: "Wands",
     ),
     TarotModel(
@@ -206,7 +206,7 @@ class TarotModel {
       name: "Three of Wands",
       meaning: "Progress, foresight, expansion",
       reversedMeaning: "Delays, lack of foresight, obstacles to long-term goals",
-      imageName: "tarot_images/39_three_of_wands.svg",
+      imageName: "assets/tarot_images/39_three_of_wands.svg",
       group: "Wands",
     ),
     TarotModel(
@@ -214,7 +214,7 @@ class TarotModel {
       name: "Four of Wands",
       meaning: "Celebration, harmony, homecoming",
       reversedMeaning: "Lack of communication, instability, home conflicts",
-      imageName: "tarot_images/40_four_of_wands.svg",
+      imageName: "assets/tarot_images/40_four_of_wands.svg",
       group: "Wands",
     ),
     TarotModel(
@@ -222,7 +222,7 @@ class TarotModel {
       name: "Five of Wands",
       meaning: "Conflict, competition, tension",
       reversedMeaning: "Avoiding conflict, respecting differences, resolving conflicts",
-      imageName: "tarot_images/41_five_of_wands.svg",
+      imageName: "assets/tarot_images/41_five_of_wands.svg",
       group: "Wands",
     ),
     TarotModel(
@@ -230,7 +230,7 @@ class TarotModel {
       name: "Six of Wands",
       meaning: "Victory, recognition, success",
       reversedMeaning: "Egotism, fall from grace, lack of recognition",
-      imageName: "tarot_images/42_six_of_wands.svg",
+      imageName: "assets/tarot_images/42_six_of_wands.svg",
       group: "Wands",
     ),
     TarotModel(
@@ -238,7 +238,7 @@ class TarotModel {
       name: "Seven of Wands",
       meaning: "Perseverance, defense, maintaining control",
       reversedMeaning: "Giving up, overwhelmed, lack of confidence",
-      imageName: "tarot_images/43_seven_of_wands.svg",
+      imageName: "assets/tarot_images/43_seven_of_wands.svg",
       group: "Wands",
     ),
     TarotModel(
@@ -246,7 +246,7 @@ class TarotModel {
       name: "Eight of Wands",
       meaning: "Swift action, movement, communication",
       reversedMeaning: "Delays, frustration, missed messages",
-      imageName: "tarot_images/44_eight_of_wands.svg",
+      imageName: "assets/tarot_images/44_eight_of_wands.svg",
       group: "Wands",
     ),
     TarotModel(
@@ -254,7 +254,7 @@ class TarotModel {
       name: "Nine of Wands",
       meaning: "Resilience, persistence, courage",
       reversedMeaning: "Exhaustion, stubbornness, defensiveness",
-      imageName: "tarot_images/45_nine_of_wands.svg",
+      imageName: "assets/tarot_images/45_nine_of_wands.svg",
       group: "Wands",
     ),
     TarotModel(
@@ -262,7 +262,7 @@ class TarotModel {
       name: "Ten of Wands",
       meaning: "Burden, responsibility, hard work",
       reversedMeaning: "Taking on too much, avoiding responsibility, release of burden",
-      imageName: "tarot_images/46_ten_of_wands.svg",
+      imageName: "assets/tarot_images/46_ten_of_wands.svg",
       group: "Wands",
     ),
     TarotModel(
@@ -270,7 +270,7 @@ class TarotModel {
       name: "Page of Wands",
       meaning: "Enthusiasm, exploration, discovery",
       reversedMeaning: "Lack of direction, procrastination, creating conflict",
-      imageName: "tarot_images/47_page_of_wands.svg",
+      imageName: "assets/tarot_images/47_page_of_wands.svg",
       group: "Wands",
     ),
     TarotModel(
@@ -278,7 +278,7 @@ class TarotModel {
       name: "Knight of Wands",
       meaning: "Energy, passion, adventure",
       reversedMeaning: "Recklessness, haste, scattered energy",
-      imageName: "tarot_images/48_knight_of_wands.svg",
+      imageName: "assets/tarot_images/48_knight_of_wands.svg",
       group: "Wands",
     ),
     TarotModel(
@@ -286,7 +286,7 @@ class TarotModel {
       name: "Queen of Wands",
       meaning: "Confidence, independence, determination",
       reversedMeaning: "Selfishness, jealousy, insecurity",
-      imageName: "tarot_images/49_queen_of_wands.svg",
+      imageName: "assets/tarot_images/49_queen_of_wands.svg",
       group: "Wands",
     ),
     TarotModel(
@@ -294,7 +294,7 @@ class TarotModel {
       name: "King of Wands",
       meaning: "Leadership, vision, entrepreneurial spirit",
       reversedMeaning: "Impulsiveness, ruthlessness, high expectations",
-      imageName: "tarot_images/50_king_of_wands.svg",
+      imageName: "assets/tarot_images/50_king_of_wands.svg",
       group: "Wands",
     ),
     TarotModel(
@@ -302,7 +302,7 @@ class TarotModel {
       name: "Ace of Cups",
       meaning: "Love, compassion, creativity",
       reversedMeaning: "Emotional loss, blocked creativity, emptiness",
-      imageName: "tarot_images/51_ace_of_cups.svg",
+      imageName: "assets/tarot_images/51_ace_of_cups.svg",
       group: "Cups",
     ),
     TarotModel(
@@ -310,7 +310,7 @@ class TarotModel {
       name: "Two of Cups",
       meaning: "Partnership, unity, love",
       reversedMeaning: "Breakup, imbalance, lack of harmony",
-      imageName: "tarot_images/52_two_of_cups.svg",
+      imageName: "assets/tarot_images/52_two_of_cups.svg",
       group: "Cups",
     ),
     TarotModel(
@@ -318,7 +318,7 @@ class TarotModel {
       name: "Three of Cups",
       meaning: "Celebration, friendship, community",
       reversedMeaning: "Overindulgence, gossip, isolation",
-      imageName: "tarot_images/53_three_of_cups.svg",
+      imageName: "assets/tarot_images/53_three_of_cups.svg",
       group: "Cups",
     ),
     TarotModel(
@@ -326,7 +326,7 @@ class TarotModel {
       name: "Four of Cups",
       meaning: "Apathy, contemplation, disconnection",
       reversedMeaning: "Awareness, acceptance, choosing happiness",
-      imageName: "tarot_images/54_four_of_cups.svg",
+      imageName: "assets/tarot_images/54_four_of_cups.svg",
       group: "Cups",
     ),
     TarotModel(
@@ -334,7 +334,7 @@ class TarotModel {
       name: "Five of Cups",
       meaning: "Loss, regret, disappointment",
       reversedMeaning: "Moving on, forgiveness, hope returning",
-      imageName: "tarot_images/55_five_of_cups.svg",
+      imageName: "assets/tarot_images/55_five_of_cups.svg",
       group: "Cups",
     ),
     TarotModel(
@@ -342,7 +342,7 @@ class TarotModel {
       name: "Six of Cups",
       meaning: "Nostalgia, childhood, memories",
       reversedMeaning: "Stuck in the past, naivety, unrealistic expectations",
-      imageName: "tarot_images/56_six_of_cups.svg",
+      imageName: "assets/tarot_images/56_six_of_cups.svg",
       group: "Cups",
     ),
     TarotModel(
@@ -350,7 +350,7 @@ class TarotModel {
       name: "Seven of Cups",
       meaning: "Choices, imagination, illusion",
       reversedMeaning: "Clarity, reality, making informed choices",
-      imageName: "tarot_images/57_seven_of_cups.svg",
+      imageName: "assets/tarot_images/57_seven_of_cups.svg",
       group: "Cups",
     ),
     TarotModel(
@@ -358,7 +358,7 @@ class TarotModel {
       name: "Eight of Cups",
       meaning: "Abandonment, withdrawal, moving on",
       reversedMeaning: "Fear of change, avoidance, hopelessness",
-      imageName: "tarot_images/58_eight_of_cups.svg",
+      imageName: "assets/tarot_images/58_eight_of_cups.svg",
       group: "Cups",
     ),
     TarotModel(
@@ -366,7 +366,7 @@ class TarotModel {
       name: "Nine of Cups",
       meaning: "Contentment, satisfaction, gratitude",
       reversedMeaning: "Greed, dissatisfaction, materialism",
-      imageName: "tarot_images/59_nine_of_cups.svg",
+      imageName: "assets/tarot_images/59_nine_of_cups.svg",
       group: "Cups",
     ),
     TarotModel(
@@ -374,7 +374,7 @@ class TarotModel {
       name: "Ten of Cups",
       meaning: "Happiness, fulfillment, emotional contentment",
       reversedMeaning: "Broken relationships, disconnection, domestic disharmony",
-      imageName: "tarot_images/60_ten_of_cups.svg",
+      imageName: "assets/tarot_images/60_ten_of_cups.svg",
       group: "Cups",
     ),
     TarotModel(
@@ -382,7 +382,7 @@ class TarotModel {
       name: "Page of Cups",
       meaning: "Creativity, intuition, new emotional experiences",
       reversedMeaning: "Emotional immaturity, insecurity, creative block",
-      imageName: "tarot_images/61_page_of_cups.svg",
+      imageName: "assets/tarot_images/61_page_of_cups.svg",
       group: "Cups",
     ),
     TarotModel(
@@ -390,7 +390,7 @@ class TarotModel {
       name: "Knight of Cups",
       meaning: "Romance, charm, imagination",
       reversedMeaning: "Unrealistic expectations, moodiness, jealousy",
-      imageName: "tarot_images/62_knight_of_cups.svg",
+      imageName: "assets/tarot_images/62_knight_of_cups.svg",
       group: "Cups",
     ),
     TarotModel(
@@ -398,7 +398,7 @@ class TarotModel {
       name: "Queen of Cups",
       meaning: "Compassion, nurturing, emotional security",
       reversedMeaning: "Emotional insecurity, co-dependency, over-sensitivity",
-      imageName: "tarot_images/63_queen_of_cups.svg",
+      imageName: "assets/tarot_images/63_queen_of_cups.svg",
       group: "Cups",
     ),
     TarotModel(
@@ -406,7 +406,7 @@ class TarotModel {
       name: "King of Cups",
       meaning: "Emotional balance, control, generosity",
       reversedMeaning: "Emotional manipulation, moodiness, volatility",
-      imageName: "tarot_images/64_king_of_cups.svg",
+      imageName: "assets/tarot_images/64_king_of_cups.svg",
       group: "Cups",
     ),
     TarotModel(
@@ -414,7 +414,7 @@ class TarotModel {
       name: "Ace of Swords",
       meaning: "Clarity, new ideas, breakthroughs",
       reversedMeaning: "Confusion, brutality, miscommunication",
-      imageName: "tarot_images/65_ace_of_swords.svg",
+      imageName: "assets/tarot_images/65_ace_of_swords.svg",
       group: "Swords",
     ),
     TarotModel(
@@ -422,7 +422,7 @@ class TarotModel {
       name: "Two of Swords",
       meaning: " Indecision, stalemate, choices",
       reversedMeaning: "Lesser of two evils, no right choice, confusion",
-      imageName: "tarot_images/66_two_of_swords.svg",
+      imageName: "assets/tarot_images/66_two_of_swords.svg",
       group: "Swords",
     ),
     TarotModel(
@@ -430,7 +430,7 @@ class TarotModel {
       name: "Three of Swords",
       meaning: "Heartbreak, sorrow, grief",
       reversedMeaning: "Recovery, forgiveness, moving on",
-      imageName: "tarot_images/67_three_of_swords.svg",
+      imageName: "assets/tarot_images/67_three_of_swords.svg",
       group: "Swords",
     ),
     TarotModel(
@@ -438,7 +438,7 @@ class TarotModel {
       name: "Four of Swords",
       meaning: "Rest, recuperation, contemplation",
       reversedMeaning: "Restlessness, burnout, stress",
-      imageName: "tarot_images/68_four_of_swords.svg",
+      imageName: "assets/tarot_images/68_four_of_swords.svg",
       group: "Swords",
     ),
     TarotModel(
@@ -446,7 +446,7 @@ class TarotModel {
       name: "Five of Swords",
       meaning: "Conflict, defeat, betrayal",
       reversedMeaning: "Reconciliation, making amends, past resentment",
-      imageName: "tarot_images/69_five_of_swords.svg",
+      imageName: "assets/tarot_images/69_five_of_swords.svg",
       group: "Swords",
     ),
     TarotModel(
@@ -454,7 +454,7 @@ class TarotModel {
       name: "Six of Swords",
       meaning: "Transition, moving on, travel",
       reversedMeaning: "Stuck in the past, unable to move on, carrying baggage",
-      imageName: "tarot_images/70_six_of_swords.svg",
+      imageName: "assets/tarot_images/70_six_of_swords.svg",
       group: "Swords",
     ),
     TarotModel(
@@ -462,7 +462,7 @@ class TarotModel {
       name: "Seven of Swords",
       meaning: "Deception, strategy, trickery",
       reversedMeaning: "Coming clean, rethinking approach, deceit exposed",
-      imageName: "tarot_images/71_seven_of_swords.svg",
+      imageName: "assets/tarot_images/71_seven_of_swords.svg",
       group: "Swords",
     ),
     TarotModel(
@@ -470,7 +470,7 @@ class TarotModel {
       name: "Eight of Swords",
       meaning: "Restriction, imprisonment, fear",
       reversedMeaning: "Freedom, self-acceptance, new perspectives",
-      imageName: "tarot_images/72_eight_of_swords.svg",
+      imageName: "assets/tarot_images/72_eight_of_swords.svg",
       group: "Swords",
     ),
     TarotModel(
@@ -478,7 +478,7 @@ class TarotModel {
       name: "Nine of Swords",
       meaning: "Anxiety, despair, nightmares",
       reversedMeaning: "Hope, reaching out for help, recovery",
-      imageName: "tarot_images/73_nine_of_swords.svg",
+      imageName: "assets/tarot_images/73_nine_of_swords.svg",
       group: "Swords",
     ),
     TarotModel(
@@ -486,7 +486,7 @@ class TarotModel {
       name: "Ten of Swords",
       meaning: "Ruin, failure, betrayal",
       reversedMeaning: "Recovery, regeneration, inevitable end",
-      imageName: "tarot_images/74_ten_of_swords.svg",
+      imageName: "assets/tarot_images/74_ten_of_swords.svg",
       group: "Swords",
     ),
     TarotModel(
@@ -494,7 +494,7 @@ class TarotModel {
       name: "Page of Swords",
       meaning: "Curiosity, communication, new ideas",
       reversedMeaning: "Gossip, deceit, all talk and no action",
-      imageName: "tarot_images/75_page_of_swords.svg",
+      imageName: "assets/tarot_images/75_page_of_swords.svg",
       group: "Swords",
     ),
     TarotModel(
@@ -502,7 +502,7 @@ class TarotModel {
       name: "Knight of Swords",
       meaning: "Ambition, action, drive",
       reversedMeaning: "Impulsiveness, recklessness, unfocused energy",
-      imageName: "tarot_images/76_knight_of_swords.svg",
+      imageName: "assets/tarot_images/76_knight_of_swords.svg",
       group: "Swords",
     ),
     TarotModel(
@@ -510,7 +510,7 @@ class TarotModel {
       name: "Queen of Swords",
       meaning: "Independence, perception, clarity",
       reversedMeaning: "Cold-heartedness, cruelty, bitterness",
-      imageName: "tarot_images/77_queen_of_swords.svg",
+      imageName: "assets/tarot_images/77_queen_of_swords.svg",
       group: "Swords",
     ),
     TarotModel(
@@ -518,7 +518,7 @@ class TarotModel {
       name: "King of Swords",
       meaning: "Authority, truth, intellectual power",
       reversedMeaning: "Manipulative, tyrannical, abusive",
-      imageName: "tarot_images/78_king_of_swords.svg",
+      imageName: "assets/tarot_images/78_king_of_swords.svg",
       group: "Swords",
     ),
     TarotModel(
@@ -526,7 +526,7 @@ class TarotModel {
       name: "Ace of Pentacles",
       meaning: "Opportunity, prosperity, new ventures",
       reversedMeaning: "Lost opportunity, lack of planning, greed",
-      imageName: "tarot_images/23_ace_of_pentacles.svg",
+      imageName: "assets/tarot_images/23_ace_of_pentacles.svg",
       group: "Pentacles",
     ),
     TarotModel(
@@ -534,7 +534,7 @@ class TarotModel {
       name: "Two of Pentacles",
       meaning: "Balance, adaptability, multitasking",
       reversedMeaning: "Overwhelmed, lack of balance, disorganization",
-      imageName: "tarot_images/24_two_of_pentacles.svg",
+      imageName: "assets/tarot_images/24_two_of_pentacles.svg",
       group: "Pentacles",
     ),
     TarotModel(
@@ -542,7 +542,7 @@ class TarotModel {
       name: "Three of Pentacles",
       meaning: "Collaboration, skill, teamwork",
       reversedMeaning: "Lack of teamwork, poor workmanship, misalignment",
-      imageName: "tarot_images/25_three_of_pentacles.svg",
+      imageName: "assets/tarot_images/25_three_of_pentacles.svg",
       group: "Pentacles",
     ),
     TarotModel(
@@ -550,7 +550,7 @@ class TarotModel {
       name: "Four of Pentacles",
       meaning: "Control, stability, possessiveness",
       reversedMeaning: "Greed, materialism, letting go",
-      imageName: "tarot_images/26_four_of_pentacles.svg",
+      imageName: "assets/tarot_images/26_four_of_pentacles.svg",
       group: "Pentacles",
     ),
     TarotModel(
@@ -558,7 +558,7 @@ class TarotModel {
       name: "Five of Pentacles",
       meaning: "Hardship, loss, isolation",
       reversedMeaning: "Recovery, improvement, end of hardship",
-      imageName: "tarot_images/27_five_of_pentacles.svg",
+      imageName: "assets/tarot_images/27_five_of_pentacles.svg",
       group: "Pentacles",
     ),
     TarotModel(
@@ -566,7 +566,7 @@ class TarotModel {
       name: "Six of Pentacles",
       meaning: "Generosity, charity, sharing",
       reversedMeaning: "Selfishness, debt, one-sided charity",
-      imageName: "tarot_images/28_six_of_pentacles.svg",
+      imageName: "assets/tarot_images/28_six_of_pentacles.svg",
       group: "Pentacles",
     ),
     TarotModel(
@@ -574,7 +574,7 @@ class TarotModel {
       name: " of Pentacles",
       meaning: "Patience, investment, assessment",
       reversedMeaning: "Lack of reward, impatience, lack of long-term vision",
-      imageName: "tarot_images/29_seven_of_pentacles.svg",
+      imageName: "assets/tarot_images/29_seven_of_pentacles.svg",
       group: "Pentacles",
     ),
     TarotModel(
@@ -582,7 +582,7 @@ class TarotModel {
       name: "Eight of Pentacles",
       meaning: "Diligence, craftsmanship, mastery",
       reversedMeaning: "Lost opportunity, lack of planning, greed",
-      imageName: "tarot_images/30_eight_of_pentacles.svg",
+      imageName: "assets/tarot_images/30_eight_of_pentacles.svg",
       group: "Pentacles",
     ),
     TarotModel(
@@ -590,7 +590,7 @@ class TarotModel {
       name: "Nine of Pentacles",
       meaning: "Luxury, self-sufficiency, financial gain",
       reversedMeaning: "Overindulgence, financial setbacks, dependence",
-      imageName: "tarot_images/31_nine_of_pentacles.svg",
+      imageName: "assets/tarot_images/31_nine_of_pentacles.svg",
       group: "Pentacles",
     ),
     TarotModel(
@@ -598,7 +598,7 @@ class TarotModel {
       name: "Ten of Pentacles",
       meaning: "Legacy, inheritance, culmination",
       reversedMeaning: "Financial failure, loss, lack of stability",
-      imageName: "tarot_images/32_ten_of_pentacles.svg",
+      imageName: "assets/tarot_images/32_ten_of_pentacles.svg",
       group: "Pentacles",
     ),
     TarotModel(
@@ -606,7 +606,7 @@ class TarotModel {
       name: "Page of Pentacles",
       meaning: "Manifestation, new opportunities, study",
       reversedMeaning: "Lack of progress, short-term focus, daydreaming",
-      imageName: "tarot_images/33_page_of_pentacles.svg",
+      imageName: "assets/tarot_images/33_page_of_pentacles.svg",
       group: "Pentacles",
     ),
     TarotModel(
@@ -614,7 +614,7 @@ class TarotModel {
       name: "knight of Pentacles",
       meaning: "Efficiency, hard work, responsibility",
       reversedMeaning: "Laziness, routine, conservatism",
-      imageName: "tarot_images/34_knight_of_pentacles.svg",
+      imageName: "assets/tarot_images/34_knight_of_pentacles.svg",
       group: "Pentacles",
     ),
     TarotModel(
@@ -622,7 +622,7 @@ class TarotModel {
       name: "Queen of Pentacles",
       meaning: "Nurturing, practicality, security",
       reversedMeaning: "Self-centeredness, work-home imbalance, smothering",
-      imageName: "tarot_images/35_queen_of_pentacles.svg",
+      imageName: "assets/tarot_images/35_queen_of_pentacles.svg",
       group: "Pentacles",
     ),
     TarotModel(
@@ -630,7 +630,7 @@ class TarotModel {
       name: "King of Pentacles",
       meaning: "Wealth, business, discipline",
       reversedMeaning: "Greed, indulgence, stubbornness",
-      imageName: "tarot_images/36_king_of_pentacles.svg",
+      imageName: "assets/tarot_images/36_king_of_pentacles.svg",
       group: "Pentacles",
     ),
   ];
