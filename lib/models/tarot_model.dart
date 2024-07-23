@@ -54,7 +54,7 @@ class TarotModel {
       name: "The Hierophant",
       meaning: "Tradition, conformity, spiritual guidance",
       reversedMeaning: "Rebellion, subversiveness, new approaches",
-      imageName: "assets/tarot_images/6_the_high_priestess.svg",
+      imageName: "assets/tarot_images/6_the_hierophant.svg",
       group: "Major Arcana",
     ),
     TarotModel(

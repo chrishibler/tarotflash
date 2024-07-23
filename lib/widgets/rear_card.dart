@@ -5,8 +5,14 @@ import 'package:tarotflash/ui/dark_cat_theme.dart';
 class RearCard extends StatelessWidget {
   final TarotModel card;
   final double height;
+  final bool isReversed;
 
-  const RearCard({super.key, required this.card, required this.height});
+  const RearCard({
+    super.key,
+    required this.card,
+    required this.height,
+    required this.isReversed,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +24,7 @@ class RearCard extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(12.0),
           child: Text(
-            card.meaning,
+            isReversed ? card.reversedMeaning : card.meaning,
             style: DarkCatTheme.body.copyWith(fontSize: 36),
             textAlign: TextAlign.center,
             overflow: TextOverflow.ellipsis, // Handle overflow if needed
