@@ -13,29 +13,38 @@ class CardPage extends StatefulWidget {
 
 class _CardPageState extends State<CardPage> {
   int currentIndex = 0;
+  bool isRotated = false;
   bool isFront = true;
   final List<TarotModel> cards = List.from(TarotModel.all)..shuffle();
-
-  @override
-  void initState() {
-    isFront = true;
-    currentIndex = 0;
-    super.initState();
-  }
 
   void _setNextModel() {
     if (currentIndex == cards.length - 1) return;
     setState(() {
+      isRotated = false;
+      isFront = true;
       currentIndex++;
-      isFront = false;
     });
   }
 
   void _setPreviousModel() {
     if (currentIndex == 0) return;
     setState(() {
+      isRotated = false;
+      isFront = true;
       currentIndex--;
-      isFront = false;
+    });
+  }
+
+  void _rotate() {
+    setState(() {
+      isFront = true;
+      isRotated = !isRotated;
+    });
+  }
+
+  void _flip() {
+    setState(() {
+      isFront = !isFront;
     });
   }
 
@@ -48,7 +57,12 @@ class _CardPageState extends State<CardPage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              CardContainer(card: cards[currentIndex]),
+              CardContainer(
+                card: cards[currentIndex],
+                isRotated: isRotated,
+                isFront: isFront,
+                onTap: _flip,
+              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -71,6 +85,14 @@ class _CardPageState extends State<CardPage> {
                     child: const Icon(
                       Icons.skip_previous_rounded,
                       size: 60,
+                    ),
+                  ),
+                  OutlinedButton(
+                    onPressed: _rotate,
+                    style: circleButtonStyle,
+                    child: const Icon(
+                      Icons.rotate_90_degrees_cw,
+                      size: 48,
                     ),
                   ),
                   OutlinedButton(
