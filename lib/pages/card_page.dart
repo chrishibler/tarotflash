@@ -11,14 +11,27 @@ class CardPage extends StatefulWidget {
   State<CardPage> createState() => _CardPageState();
 }
 
-class _CardPageState extends State<CardPage> {
+class _CardPageState extends State<CardPage> with SingleTickerProviderStateMixin {
+  late final AnimationController _controller = AnimationController(
+    duration: const Duration(milliseconds: 666),
+    vsync: this,
+  );
+  late final Animation<double> _animation = Tween<double>(begin: 0, end: 1).animate(_controller);
   int currentIndex = 0;
   bool isRotated = false;
   bool isFront = true;
   final List<TarotModel> cards = List.from(TarotModel.all)..shuffle();
 
+  @override
+  void initState() {
+    super.initState();
+    _controller.forward();
+  }
+
   void _setNextModel() {
     if (currentIndex == cards.length - 1) return;
+    _controller.reset();
+    _controller.forward();
     setState(() {
       isRotated = false;
       isFront = true;
@@ -28,6 +41,8 @@ class _CardPageState extends State<CardPage> {
 
   void _setPreviousModel() {
     if (currentIndex == 0) return;
+    _controller.reset();
+    _controller.forward();
     setState(() {
       isRotated = false;
       isFront = true;
@@ -57,11 +72,14 @@ class _CardPageState extends State<CardPage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              CardContainer(
-                card: cards[currentIndex],
-                isRotated: isRotated,
-                isFront: isFront,
-                onTap: _flip,
+              FadeTransition(
+                opacity: _animation,
+                child: CardContainer(
+                  card: cards[currentIndex],
+                  isRotated: isRotated,
+                  isFront: isFront,
+                  onTap: _flip,
+                ),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -110,5 +128,11 @@ class _CardPageState extends State<CardPage> {
         ),
       ),
     );
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
   }
 }
