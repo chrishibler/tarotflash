@@ -11,55 +11,73 @@ class CardPage extends StatefulWidget {
   State<CardPage> createState() => _CardPageState();
 }
 
-class _CardPageState extends State<CardPage> with SingleTickerProviderStateMixin {
-  late final AnimationController _controller = AnimationController(
+class _CardPageState extends State<CardPage> with TickerProviderStateMixin {
+  late final AnimationController _fadeController = AnimationController(
     duration: const Duration(milliseconds: 666),
     vsync: this,
   );
-  late final Animation<double> _animation = Tween<double>(begin: 0, end: 1).animate(_controller);
-  int currentIndex = 0;
-  bool isRotated = false;
-  bool isFront = true;
-  final List<TarotModel> cards = List.from(TarotModel.all)..shuffle();
+  late final Animation<double> _fadeAnimation = Tween<double>(begin: 0, end: 1).animate(_fadeController);
+
+  late final AnimationController _rotateController = AnimationController(
+    duration: const Duration(milliseconds: 666),
+    vsync: this,
+  );
+  late final Animation<double> _rotateAnimation = Tween<double>(begin: 0, end: 0.5).animate(
+    CurvedAnimation(
+      parent: _rotateController,
+      curve: Curves.elasticInOut,
+    ),
+  );
+  int _currentIndex = 0;
+  bool _isRotated = false;
+  bool _isFront = true;
+  final List<TarotModel> _cards = List.from(TarotModel.all)..shuffle();
 
   @override
   void initState() {
     super.initState();
-    _controller.forward();
+    _fadeController.forward();
   }
 
   void _setNextModel() {
-    if (currentIndex == cards.length - 1) return;
-    _controller.reset();
-    _controller.forward();
+    if (_currentIndex == _cards.length - 1) return;
+    _fadeController.reset();
+    _fadeController.forward();
+    _rotateController.reset();
     setState(() {
-      isRotated = false;
-      isFront = true;
-      currentIndex++;
+      _isRotated = false;
+      _isFront = true;
+      _currentIndex++;
     });
   }
 
   void _setPreviousModel() {
-    if (currentIndex == 0) return;
-    _controller.reset();
-    _controller.forward();
+    if (_currentIndex == 0) return;
+    _fadeController.reset();
+    _fadeController.forward();
+    _rotateController.reset();
     setState(() {
-      isRotated = false;
-      isFront = true;
-      currentIndex--;
+      _isRotated = false;
+      _isFront = true;
+      _currentIndex--;
     });
   }
 
   void _rotate() {
     setState(() {
-      isFront = true;
-      isRotated = !isRotated;
+      _isFront = true;
+      if (_isRotated) {
+        _rotateController.reverse();
+      } else {
+        _rotateController.forward();
+      }
+      _isRotated = !_isRotated;
     });
   }
 
   void _flip() {
     setState(() {
-      isFront = !isFront;
+      _isFront = !_isFront;
     });
   }
 
@@ -73,32 +91,33 @@ class _CardPageState extends State<CardPage> with SingleTickerProviderStateMixin
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               FadeTransition(
-                opacity: _animation,
+                opacity: _fadeAnimation,
                 child: CardContainer(
-                  card: cards[currentIndex],
-                  isRotated: isRotated,
-                  isFront: isFront,
+                  card: _cards[_currentIndex],
+                  isRotated: _isRotated,
+                  isFront: _isFront,
                   onTap: _flip,
+                  rotateAnimation: _rotateAnimation,
                 ),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    cards[currentIndex].name,
+                    _cards[_currentIndex].name,
                     style: DarkCatTheme.heading,
                   )
                 ],
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [Text(cards[currentIndex].group, style: DarkCatTheme.body)],
+                children: [Text(_cards[_currentIndex].group, style: DarkCatTheme.body)],
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   OutlinedButton(
-                    onPressed: currentIndex == 0 ? null : _setPreviousModel,
+                    onPressed: _currentIndex == 0 ? null : _setPreviousModel,
                     style: circleButtonStyle,
                     child: const Icon(
                       Icons.skip_previous_rounded,
@@ -114,7 +133,7 @@ class _CardPageState extends State<CardPage> with SingleTickerProviderStateMixin
                     ),
                   ),
                   OutlinedButton(
-                    onPressed: currentIndex == cards.length - 1 ? null : _setNextModel,
+                    onPressed: _currentIndex == _cards.length - 1 ? null : _setNextModel,
                     style: circleButtonStyle,
                     child: const Icon(
                       Icons.skip_next_rounded,
@@ -132,7 +151,7 @@ class _CardPageState extends State<CardPage> with SingleTickerProviderStateMixin
 
   @override
   void dispose() {
-    _controller.dispose();
+    _fadeController.dispose();
     super.dispose();
   }
 }
