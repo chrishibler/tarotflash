@@ -88,7 +88,7 @@ class _CardPageState extends State<CardPage> with TickerProviderStateMixin {
         child: Padding(
           padding: const EdgeInsets.only(top: 12),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               FadeTransition(
                 opacity: _fadeAnimation,

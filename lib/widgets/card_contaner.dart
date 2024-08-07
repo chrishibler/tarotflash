@@ -26,7 +26,7 @@ class CardContainer extends StatefulWidget {
 class _CardContainerState extends State<CardContainer> with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
-    const scaleFactor = 0.8;
+    const scaleFactor = 0.6;
     final double screenHeight = MediaQuery.of(context).size.height;
 
     return GestureDetector(
